@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px; 
+            border-collapse: collapse;  
+            position: relative; 
+        }
+
+        caption{
+            font-size: 1.5rem;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        th,
+        td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead,
+        tfoot{
+            background-color: rgba(82, 80, 80, 0.836);
+            color: white;
+        }
+
+        thead > tr >th{
+            position: sticky;
+            top: 0;
+            background: rgba(82, 80, 80, 0.87);;
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: lightgray;
+        }
+        .num{
+            text-align: right;
+        }
+        .populacao{
+            width: 100px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatomia para tabelas grandes
+        TABLE
+            CAPTION
+            THEAD
+                 TR, TD,TH
+            TBODY
+                 TR, TD, TH
+            TFOOT
+                 TR,TD, TH
+    -->
+
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" class="populacao">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919,049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">19.597,330</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264,943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.016,906</td>
+            </tr>
+            <tr>
+                <td>Parána</td>
+                <td class="num">10.444,526</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10.693,929</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">8.796,448</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8.452,381</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="num"><strong>135.185,512</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nemo laudantium, tempora repellendus temporibus, adipisci error ea veritatis libero, et inventore recusandae nostrum obcaecati molestiae? Aut accusantium blanditiis inventore eum?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae rerum ipsa asperiores. Explicabo, similique. Ullam, totam iste non impedit nobis cumque distinctio atque, delectus tempora ipsa dolor nemo beatae dolores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, unde est similique dicta necessitatibus hic sequi laborum quae. Ratione labore quaerat ex? Quo quos quae, accusamus eos impedit expedita eveniet?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nemo laudantium, tempora repellendus temporibus, adipisci error ea veritatis libero, et inventore recusandae nostrum obcaecati molestiae? Aut accusantium blanditiis inventore eum?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae rerum ipsa asperiores. Explicabo, similique. Ullam, totam iste non impedit nobis cumque distinctio atque, delectus tempora ipsa dolor nemo beatae dolores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, unde est similique dicta necessitatibus hic sequi laborum quae. Ratione labore quaerat ex? Quo quos quae, accusamus eos impedit expedita eveniet?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nemo laudantium, tempora repellendus temporibus, adipisci error ea veritatis libero, et inventore recusandae nostrum obcaecati molestiae? Aut accusantium blanditiis inventore eum?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae rerum ipsa asperiores. Explicabo, similique. Ullam, totam iste non impedit nobis cumque distinctio atque, delectus tempora ipsa dolor nemo beatae dolores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, unde est similique dicta necessitatibus hic sequi laborum quae. Ratione labore quaerat ex? Quo quos quae, accusamus eos impedit expedita eveniet?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nemo laudantium, tempora repellendus temporibus, adipisci error ea veritatis libero, et inventore recusandae nostrum obcaecati molestiae? Aut accusantium blanditiis inventore eum?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae rerum ipsa asperiores. Explicabo, similique. Ullam, totam iste non impedit nobis cumque distinctio atque, delectus tempora ipsa dolor nemo beatae dolores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, unde est similique dicta necessitatibus hic sequi laborum quae. Ratione labore quaerat ex? Quo quos quae, accusamus eos impedit expedita eveniet?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nemo laudantium, tempora repellendus temporibus, adipisci error ea veritatis libero, et inventore recusandae nostrum obcaecati molestiae? Aut accusantium blanditiis inventore eum?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae rerum ipsa asperiores. Explicabo, similique. Ullam, totam iste non impedit nobis cumque distinctio atque, delectus tempora ipsa dolor nemo beatae dolores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, unde est similique dicta necessitatibus hic sequi laborum quae. Ratione labore quaerat ex? Quo quos quae, accusamus eos impedit expedita eveniet?</p>
+</body>
+</html>
